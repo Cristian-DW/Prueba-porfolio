@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+/* .container{
+    margin: 0 auto;
+    width: 90%;
+} */
+/* Variables CSS */
+:root{
+    --blanco: #fff;
+    --negro: #000;
+    --fondo: #2f2c31;
+    --Transparencia: #00000020;
+    --hover: #967abb;
+    --letraTitulo: 5rem;
+    --letraParrafo: 2rem;
+}
+*{
+    color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Barra de navegación */
+a {
+    text-decoration: none;
+}
+.navbar{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content:space-around ;
+    background-color: var(--Transparencia);
+    align-items: center;
+    position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-items{
+    display: flex;
+    column-gap: 12rem;
+    letter-spacing: 0.3rem;
+}
+.navbar-items a{
+    font-size: var(--letraParrafo);
+    color: var(--blanco);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.navbar-redes{
+    display: flex;
+    column-gap: 6rem;
+    
+}
+.navbar-items a:hover, .navbar-logo:hover, .red1:hover, .red2:hover, .red3:hover{
+    scale: .8;
+    transition: 0.8s;
+    text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* hero o encabezado */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+    width: 100%;
+    height: 104.1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo);
+}
+.name{
+    font-size: 11rem;
+    letter-spacing: 0.5rem;
+}
+.title{
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+}
+ /* botón */
+.button{
+    display: block;
+    padding: 2rem;
+    height: 3rem;
+    border: 1px solid var(--blanco);
+    font-size: var(--letraParrafo);
+    letter-spacing: 0.3rem;
+    margin-top: 10rem;
+    font-size: var(--letraParrafo);
+}    
+.button:hover{
+    color: #000000;
+    background-image: none;
+    cursor: pointer;
+    transition: 1s;
+    scale: .9;
+    border: 1px solid #000000;
+    background-color: #ddd;
 }
