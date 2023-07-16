@@ -8,10 +8,11 @@
     --negro: #000;
     --fondo: #2f2c31;
     --fondo2:#CAB492;
-    --Transparencia: #00000020;
+    --Transparencia: #CAB49270;
     --hover: #967abb;
     --letraTitulo: 5rem;
     --letraParrafo: 2rem;
+    
 }
 *{
     box-sizing: border-box
@@ -25,9 +26,11 @@ a {
     height: 6rem;
     display: flex;
     justify-content: space-around;
-    background-color: var(--Transparencia);
     align-items: center;
-    position: absolute;
+    position: fixed;
+    z-index: 3;
+    border-bottom: 1px solid #ddd;
+    backdrop-filter: blur(5px);
 }
 
 .navbar-items{
@@ -56,7 +59,7 @@ a {
 
 .container{
     width: 100%;
-    height: 104.1rem;
+    height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -65,9 +68,11 @@ a {
     background-color: var(--fondo2);
     color: var(--blanco);
 }
-.name{
-    font-size: 11rem;
-    letter-spacing: 0.5rem;
+.name {
+    margin-top: 30rem;
+    font-size: 20rem;
+    letter-spacing: 0.8rem;
+    word-spacing: 4rem;
 }
 .title{
     font-size: 8rem;
@@ -96,15 +101,42 @@ a {
     border: 1px solid #000000;
     background-color: #ffffff;
 }
+.scroll{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+}
+.scroll p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.scroll img{
+    position: relative;
+    animation-name: moverArribaAbajo;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes moverArribaAbajo {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 20px;
+    }
+  }
 /* about me */
 .aboutMe{
     width: 100%;
     height: auto;
-    background-color: #fff;
+    background-color: #383838;
     display: flex;
     gap: 5rem;
     padding: 5rem;
-
+    color: #fff;
 }
 
 .profile{
@@ -121,22 +153,14 @@ a {
 }
 
 /* funcionalidad */
-.App {
-    height: 400vh;
-    /* Altura suficiente para simular el scroll */
-    overflow-y: scroll;
-    overflow-x: auto;
-    /* Mostrar la barra de scroll vertical */
-}
 
 #header{
     position: fixed;
-    /* Fijar la primera pantalla */
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-    /* Colocar por encima de la segunda pantalla */
+
 }
 
 #main {

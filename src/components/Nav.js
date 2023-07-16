@@ -7,7 +7,7 @@ import Red3 from "../media/bxl-github.svg"
 
 
 function Nav() {
-    
+
   return (
     <div className="navbar">
       <div className="navbar-logo">
