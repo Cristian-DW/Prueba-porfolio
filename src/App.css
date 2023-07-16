@@ -7,15 +7,15 @@
     --blanco: #fff;
     --negro: #000;
     --fondo: #2f2c31;
+    --fondo2:#CAB492;
     --Transparencia: #00000020;
     --hover: #967abb;
     --letraTitulo: 5rem;
     --letraParrafo: 2rem;
 }
 *{
-    color: #fff;
+    box-sizing: border-box
 }
-
 /* Barra de navegación */
 a {
     text-decoration: none;
@@ -24,10 +24,10 @@ a {
     width: 100%;
     height: 6rem;
     display: flex;
-    justify-content:space-around ;
+    justify-content: space-around;
     background-color: var(--Transparencia);
     align-items: center;
-    position: fixed;
+    position: absolute;
 }
 
 .navbar-items{
@@ -62,7 +62,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--fondo);
+    background-color: var(--fondo2);
+    color: var(--blanco);
 }
 .name{
     font-size: 11rem;
@@ -72,16 +73,19 @@ a {
     font-size: 8rem;
     letter-spacing: 0.5rem;
 }
+/* palabras cambiantas */
+
  /* botón */
 .button{
     display: block;
     padding: 2rem;
-    height: 3rem;
     border: 1px solid var(--blanco);
     font-size: var(--letraParrafo);
     letter-spacing: 0.3rem;
     margin-top: 10rem;
     font-size: var(--letraParrafo);
+    background-color: #00000050;
+    color: var(--blanco);
 }    
 .button:hover{
     color: #000000;
@@ -90,5 +94,54 @@ a {
     transition: 1s;
     scale: .9;
     border: 1px solid #000000;
-    background-color: #ddd;
+    background-color: #ffffff;
 }
+/* about me */
+.aboutMe{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    gap: 5rem;
+    padding: 5rem;
+
+}
+
+.profile{
+    font-size: 3rem;
+}
+.profile h3{
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+}
+.profile p{
+    word-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
+}
+
+/* funcionalidad */
+.App {
+    height: 400vh;
+    /* Altura suficiente para simular el scroll */
+    overflow-y: scroll;
+    overflow-x: auto;
+    /* Mostrar la barra de scroll vertical */
+}
+
+#header{
+    position: fixed;
+    /* Fijar la primera pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /* Colocar por encima de la segunda pantalla */
+}
+
+#main {
+    position: relative;
+    z-index: 2;
+    top: 104.1rem;
+}
+  
