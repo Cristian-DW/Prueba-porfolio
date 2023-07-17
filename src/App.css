@@ -21,6 +21,26 @@
 a {
     text-decoration: none;
 }
+
+
+/* funcionalidad */
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+#main {
+    position: relative;
+    z-index: 2;
+    top: 104.1rem;
+    background-color: #383838;
+    color: #fff;
+}
 .navbar{
     width: 100%;
     height: 6rem;
@@ -132,40 +152,38 @@ a {
 .aboutMe{
     width: 100%;
     height: auto;
-    background-color: #383838;
     display: flex;
-    gap: 5rem;
-    padding: 5rem;
-    color: #fff;
+    align-items: center;
+    column-gap: 5rem;
+    
 }
 
-.profile{
+.about{
     font-size: 3rem;
+    padding: 10rem 10rem 10rem 10rem;
 }
-.profile h3{
-    font-size: 4rem;
+.about h3, .profile h3{
+    font-size: 5rem;
     letter-spacing: 0.3rem;
     margin-bottom: 2rem;
 }
-.profile p{
+.about p, .profile p{
+    font-size: 3rem;
     word-spacing: 0.5rem;
     letter-spacing: 0.2rem;
 }
 
-/* funcionalidad */
-
-#header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-
+.education{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
-#main {
-    position: relative;
-    z-index: 2;
-    top: 104.1rem;
+.profile{
+    grid-column: 1;
 }
+.college{
+    grid-column: 2;
+}
+
   

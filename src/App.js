@@ -2,6 +2,7 @@ import './App.css';
 import Nav from "./components/Nav";
 import Hero from "./components/hero";
 import About from "./components/about";
+import Education from './components/education';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       </header>
       <section id="main" className="section">
         <About/>
+        <Education/>
       </section>
     </div>
   );
