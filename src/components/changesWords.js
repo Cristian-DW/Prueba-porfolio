@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const palabras = ["Desarrollador", "Diseñador", "Apasionado"];
+const palabras = ["Creativo", "Resolutivo", "Organizado" , "Resiliente"];
 
 function Title() {
   const [primeraPalabra, setPrimeraPalabra] = useState(0);
@@ -14,7 +14,7 @@ function Title() {
   }, []);
 
   return (
-        <span>{palabras[primeraPalabra]}</span>
+        <h2>{palabras[primeraPalabra]}</h2>
 
   );
 }
