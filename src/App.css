@@ -50,7 +50,7 @@ a {
     position: fixed;
     z-index: 3;
     border-bottom: 1px solid #ddd;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
 }
 
 .navbar-items{
@@ -100,6 +100,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;  
+    width: 100%;
+    height: 90rem,;
+    
 } 
 .description{
     font-size: 2rem;
@@ -194,6 +197,30 @@ a {
     width: 50rem;
     height: auto;
     box-shadow: 5px 0px 0px 0px  #181818;
+}
+
+/* skill habilidades */
+.slider {
+    background-color: #645ebf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+}
+
+.sliders {
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 20rem;
+}
+.img-slide{
+    width: 100px;
+    height: 100px;
+    
+}
+.image-slide img{
+    width: 100%;
 }
 
 .education{

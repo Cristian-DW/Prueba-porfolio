@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/hero";
 import About from "./components/about";
 import Education from './components/education';
+import SvgSlider from './components/skills';
 
 
 
@@ -10,13 +11,16 @@ import Education from './components/education';
 function App() {
   return (
     <div className="App">
-        <Nav/>
+      <Nav />
       <header id="header" className="section">
-        <Hero/>
+        <Hero />
       </header>
       <section id="main" className="section">
-        <About/>
-        <Education/>
+        <About />
+        <div className='slider'>
+          <SvgSlider />
+        </div>
+        <Education />
       </section>
     </div>
   );
