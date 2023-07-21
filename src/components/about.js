@@ -1,5 +1,5 @@
 import React from "react";
-import ImgCard from '../media/img-about.png';
+import ImgCard from '../media/img-about.webp';
 
 
 function About(){

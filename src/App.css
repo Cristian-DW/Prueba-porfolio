@@ -38,7 +38,7 @@ a {
     position: relative;
     z-index: 2;
     top: 104.1rem;
-    background-color: #383838;
+    background-color: #0e0e0e;
     color: #fff;
 }
 .navbar{
@@ -85,6 +85,7 @@ a {
     background-color: var(--fondo2);
     color: var(--blanco);
     padding: 0rem 30rem  ;
+    overflow: hidden;
 }
 .hero{
     grid-column: 1;
@@ -93,12 +94,13 @@ a {
     justify-content: center;
     color: #fff;
 }
+
 .anime{
     grid-column: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center;  
+} 
 .description{
     font-size: 2rem;
     margin-top: 3rem;
@@ -191,6 +193,7 @@ a {
 .img img{
     width: 50rem;
     height: auto;
+    box-shadow: 5px 0px 0px 0px  #181818;
 }
 
 .education{

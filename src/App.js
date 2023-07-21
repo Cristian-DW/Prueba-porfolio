@@ -6,6 +6,7 @@ import Education from './components/education';
 
 
 
+
 function App() {
   return (
     <div className="App">

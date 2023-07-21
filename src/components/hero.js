@@ -21,7 +21,7 @@ function Hero() {
           Explora mis creaciones
         </a>
       </div>
-      <div className="anime"><Animation /></div>
+      <Animation />
       <p>Scroll</p>
       <img src={Icon} alt="icono de scroll" />
     </div>
