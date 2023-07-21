@@ -56,7 +56,6 @@ a {
 .navbar-items{
     display: flex;
     column-gap: 12rem;
-    letter-spacing: 0.3rem;
 }
 .navbar-items a{
     font-size: var(--letraParrafo);
@@ -85,7 +84,7 @@ a {
     grid-template-columns: 60% 40%;
     background-color: var(--fondo2);
     color: var(--blanco);
-    padding: 0rem 20rem 0rem 20rem ;
+    padding: 0rem 30rem  ;
 }
 .hero{
     grid-column: 1;
@@ -102,7 +101,7 @@ a {
 }
 .description{
     font-size: 2rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 .name {
     font-size: 8rem;
@@ -122,8 +121,7 @@ a {
     width: fit-content;
     border: 1px solid var(--blanco);
     font-size: var(--letraParrafo);
-    letter-spacing: 0.3rem;
-    margin-top: 10rem;
+    margin-top: 13rem;
     font-size: var(--letraParrafo);
     background-color: #00000050;
     color: var(--blanco);
@@ -168,23 +166,31 @@ a {
     height: auto;
     display: flex;
     align-items: center;
-    column-gap: 5rem;
+    column-gap: 20rem;
+    padding: 0rem 35rem;
     
 }
 
 .about{
-    font-size: 3rem;
-    padding: 10rem 10rem 10rem 10rem;
+    font-size: 2rem;
+    
 }
 .about h3, .profile h3{
     font-size: 5rem;
-    letter-spacing: 0.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    
+    
 }
 .about p, .profile p{
-    font-size: 3rem;
-    word-spacing: 0.5rem;
-    letter-spacing: 0.2rem;
+    font-size: 2.4rem;
+    word-spacing: 0.4rem;
+}
+.img{
+    padding:  10rem 0rem
+}
+.img img{
+    width: 50rem;
+    height: auto;
 }
 
 .education{

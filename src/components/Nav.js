@@ -14,10 +14,10 @@ function Nav() {
         <a href="/"><img src={Logo} alt="logo" /></a>
       </div>
       <div className="navbar-items">
-        <a href="#about">sobre mi</a>
+        <a href="#about">Conóceme</a>
         <a href="#Education">Educación</a>
-        <a href="#project">Proyectos</a>
-        <a href="#contact">Contacto</a>
+        <a href="#project">Porfolio</a>
+        <a href="#contact">Contáctame</a>
       </div>
       <div className="navbar-redes">
         <a href="mailto:cristtiiank@gmail.com"> <img className="red1" src={Red1} alt="gmail"/></a>
