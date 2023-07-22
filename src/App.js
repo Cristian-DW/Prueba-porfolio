@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Education from './components/education';
 import SvgSlider from './components/skills';
+import Porfolio from './components/porfolio';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <SvgSlider />
         </div>
         <Education />
+        <Porfolio />
       </section>
     </div>
   );
