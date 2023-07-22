@@ -140,6 +140,10 @@ a {
     border: 1px solid #000000;
     background-color: #ffffff;
 }
+.cv{
+    scale: 2;
+    font-size: 1.9rem;
+}
 .scroll{
     display: flex;
     flex-direction: column;
@@ -181,14 +185,15 @@ a {
     
 }
 .about h3, .profile h3{
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 4rem;
     
     
 }
 .about p, .profile p{
-    font-size: 2.4rem;
+    font-size: 2rem;
     word-spacing: 0.4rem;
+    margin-bottom: 8rem;
 }
 .img{
     padding:  10rem 0rem
@@ -196,7 +201,7 @@ a {
 .img img{
     width: 50rem;
     height: auto;
-    box-shadow: 5px 0px 0px 0px  #181818;
+    filter: drop-shadow(0px 0px 0.3rem #797979);
 }
 
 /* skill habilidades */
@@ -212,7 +217,7 @@ a {
 .sliders {
     width: 60%;
     margin: 0 auto;
-    padding-left: 20rem;
+    padding-left: 30rem;
 }
 .img-slide{
     width: 100px;
@@ -225,15 +230,32 @@ a {
 
 .education{
     margin-top: 10rem;
-    display: grid;
-    grid-template-columns: 40% 60%;
+    margin:  0 auto;
+    padding: 15rem 35rem;
+    
 }
-
 .profile{
-    grid-column: 1;
+    text-align: center;
 }
 .college{
-    grid-column: 2;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15rem;
+    font-size: 4rem;
 }
 
-  
+.college article{
+    width: 25rem;
+    height: 30rem;
+    background-color: #000000;
+    filter: drop-shadow(0px 0px 0.3rem #5c5c5c);
+    position: relative;
+}
+.img-education {
+    width: 8rem;
+    height: auto;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,4 +1,8 @@
 import React from "react";
+import ImgSena from "../media/sena.png"
+import ImgMicrosoft from "../media/microsoft.png"
+import ImgGoogle from "../media/google.png"
+
 
 
 
@@ -7,19 +11,29 @@ function Education() {
   return (
     <div id="education" className="education">
       <div className="profile">
-        <h3>Perfil Profesional</h3>
+        <h3>Educación</h3>
         <p>
-          Egresado Tecnología Análisis y Desarrollo de Software: Habilidades en
-          programación, bases de datos y desarrollo web. Experiencia en análisis
-          y diseño de software. Capacidad para resolver problemas y depurar.
-          Trabajo en equipo y comunicación efectiva. Mentalidad de aprendizaje
-          continuo.
+          Profesional con habilidades para interpretar y diseñar sistemas
+          informáticos que satisfacen las necesidades del usuario. Con
+          conocimientos en programación, análisis de datos, interfaces de
+          usuario, bases de datos y seguridad informática. Destreza en trabajar
+          con computadoras, comunicarse con usuarios y colegas, y experiencia en
+          metodologías ágiles para el desarrollo de software.
         </p>
       </div>
       <div className="college">
-        <article className="card"></article>
-        <article className="card"></article>
-        <article className="card"></article>
+          <article className="card">
+            <img className="img-education" src={ImgSena} alt="curso"/>
+            
+          </article>
+          <article className="card">
+          <img className="img-education" src={ImgMicrosoft} alt="curso"/>
+            
+          </article>
+          <article className="card">
+          <img className="img-education" src={ImgGoogle} alt="curso"/>
+            
+          </article>
       </div>
     </div>
   );
