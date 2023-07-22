@@ -24,10 +24,17 @@ function Education() {
       <div className="college">
           <article className="card">
             <img className="img-education" src={ImgSena} alt="curso"/>
-            
+            <h3>Analisis y Desarrollo de Software </h3>
+            <p>Servicio Nacional de Apredizaje</p>
+            <p>2022 - 2024</p>
+            <p>Bogotá DC</p>
           </article>
           <article className="card">
           <img className="img-education" src={ImgMicrosoft} alt="curso"/>
+            
+          </article>
+          <article className="card">
+          <img className="img-education" src={ImgGoogle} alt="curso"/>
             
           </article>
           <article className="card">

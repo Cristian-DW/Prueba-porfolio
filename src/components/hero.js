@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "./changesWords"
-import Icon from "../media/down.svg"
 import Animation from "./animation"
 
 
@@ -22,8 +21,6 @@ function Hero() {
         </a>
       </div>
       <Animation />
-      <p>Scroll</p>
-      <img src={Icon} alt="icono de scroll" />
     </div>
   );
 }

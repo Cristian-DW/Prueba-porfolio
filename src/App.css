@@ -81,10 +81,10 @@ a {
     height: 104rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
     background-color: var(--fondo2);
     color: var(--blanco);
-    padding: 0rem 30rem  ;
+    padding: 0rem 25rem  ;
     overflow: hidden;
 }
 .hero{
@@ -92,7 +92,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
+    height: 100%;
 }
 
 .anime{
@@ -101,9 +101,12 @@ a {
     align-items: center;
     justify-content: center;  
     width: 100%;
-    height: 90rem,;
-    
+    height: 100%;
 } 
+.animeContainer{
+    width: 500px;
+    height: 600px;
+}
 .description{
     font-size: 2rem;
     margin-top: 3rem;
@@ -114,7 +117,7 @@ a {
     
 }
 .title{
-    font-size: 8rem;
+    font-size: 7rem;
    
 }
 
@@ -175,8 +178,8 @@ a {
     height: auto;
     display: flex;
     align-items: center;
-    column-gap: 20rem;
-    padding: 0rem 35rem;
+    column-gap: 10rem;
+    padding: 0rem 25rem;
     
 }
 
@@ -217,7 +220,7 @@ a {
 .sliders {
     width: 60%;
     margin: 0 auto;
-    padding-left: 30rem;
+    padding-left: 20rem;
 }
 .img-slide{
     width: 100px;
@@ -245,11 +248,21 @@ a {
 }
 
 .college article{
-    width: 25rem;
-    height: 30rem;
+    width: 34rem;
+    height: 20rem;
     background-color: #000000;
+    padding: 5rem 1rem 1rem 1rem;
     filter: drop-shadow(0px 0px 0.3rem #5c5c5c);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.college article:hover{
+    scale: 0.9;
+    transition: 0.5s;
 }
 .img-education {
     width: 8rem;
@@ -258,4 +271,12 @@ a {
     top: -5%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.college article h3{
+    font-weight: 400;
+}
+.college article p{
+    margin-top: 1rem;
+    font-weight: 400;
 }
