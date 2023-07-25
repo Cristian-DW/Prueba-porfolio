@@ -5,6 +5,7 @@ import About from "./components/about";
 import Education from './components/education';
 import SvgSlider from './components/skills';
 import Porfolio from './components/porfolio';
+import ContactForm  from './components/contact';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         </div>
         <Education />
         <Porfolio />
+        <ContactForm/>
       </section>
     </div>
   );
