@@ -22,7 +22,7 @@ const ContactForm = () => {
     <div className='contact'>
     <div className='legend-contact'>
         <h3>Contáctame</h3>
-        <p>¿Tienes un problema que resolver?
+        <p>¿Tienes un problema que resolver? <br></br>
             Cuéntame tus ideas para desarrollar el sitio web de tus sueños.
         </p>
         <a href='m'>cristtiiank@gmail.com</a>
@@ -30,8 +30,8 @@ const ContactForm = () => {
 
     <div className='form'> 
     <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Nombre:</label>
+      <div className='input-contact'>
+        <label htmlFor="name">Nombre</label>
         <input
           type="text"
           id="name"
@@ -41,8 +41,8 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
+      <div className='input-contact'>
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
@@ -52,8 +52,8 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div>
-        <label htmlFor="message">Mensaje:</label>
+      <div className='input-contact'>
+        <label htmlFor="message">Mensaje</label>
         <textarea
           id="message"
           name="message"

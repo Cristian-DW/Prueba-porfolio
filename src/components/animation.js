@@ -3,14 +3,13 @@ import Spline from '@splinetool/react-spline';
 
 
 
+
 export default function Animation() {
 
   return (
-    <div className="anime">
-      <div className="animeContainer"> <Spline scene="https://prod.spline.design/hQg398FznLpL3Dxz/scene.splinecode" /></div>
-    </div>
-   
+    <Spline scene="https://prod.spline.design/hQg398FznLpL3Dxz/scene.splinecode" />
   );
 }
+
 
 
