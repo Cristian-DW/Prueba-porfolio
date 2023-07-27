@@ -1,5 +1,5 @@
 import React from 'react';
-import Proyecto1 from "../media/google.png"
+
 
 function Porfolio() {
     return (
@@ -12,7 +12,7 @@ function Porfolio() {
         </div>
         <div className="projects">
             <article className="project">
-                <img src={Proyecto1} alt='proyecto uno'/>
+                
             </article>
             <article className="project">
            

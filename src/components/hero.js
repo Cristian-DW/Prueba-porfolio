@@ -11,7 +11,10 @@ function Hero() {
     <div className="container">
       <div className="hero">
         <h1 className="name">Desarrollador Frontend</h1>
-        <h2 className="title"> <Title /></h2>
+        <h2 className="title">
+          {" "}
+          <Title />
+        </h2>
         <p className="description">
           Me apasiona crear experiencias que sean atractivas, accesibles y
           centradas en el usuario.
@@ -20,9 +23,10 @@ function Hero() {
           Explora mis creaciones
         </a>
       </div>
-      <Animation />
+      <div className="anime">
+        <Animation />
+      </div>
     </div>
-    
   );
 }
 
