@@ -125,23 +125,23 @@ a {
 
  /* botón */
 .button{
-    padding: 2rem;
+    padding: 1.5rem;
     width: fit-content;
     border: 1px solid var(--blanco);
     font-size: var(--letraParrafo);
     margin-top: 13rem;
     font-size: var(--letraParrafo);
-    background-color: #00000050;
-    color: var(--blanco);
+    background-color: #ffffff;
+    color: var(--fondo2);
 }    
 .button:hover{
-    color: #000000;
+    color: #ffffff;
     background-image: none;
     cursor: pointer;
-    transition: 1s;
-    scale: .9;
-    border: 1px solid #000000;
-    background-color: #ffffff;
+    transition: 0.5s;
+    scale: .97;
+    border: 1px solid #ffffff;
+    background-color: #00000028;
 }
 .cv{
     scale: 2;
@@ -197,6 +197,9 @@ a {
     font-size: 2rem;
     word-spacing: 0.4rem;
     margin-bottom: 8rem;
+}
+.cv{
+    color: #000;
 }
 .img{
     padding:  10rem 0rem
@@ -334,21 +337,40 @@ a {
     flex-direction: column;
     margin-bottom: 1.6rem;
 }
-.form input, .form textarea, button{
+.form input, .form textarea, .submit{
    width: 45rem;
    height: 4.5rem;
+   color: #fff;
    font-size: 1.7rem;
    padding: 0.75rem;
-   border: none;
+   border: 1px solid #575757;
    transition: border-color 0.3s; 
+   background-color: #645ebf31;
 }
 .form input:focus, .form textarea:focus{
     outline: none; 
     backdrop-filter: 2px;
-    filter: drop-shadow(0px 0px 1rem #645ebf);
-    border: 1px solid #645ebf;
+    filter: drop-shadow(0px 0px 1rem #8d88ce);
+    border: 1px solid #675ee0;
 }
 .form label{
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
+
+.submit {
+    background-color: #ffffff;
+    color: #000;
+}
+.submit:hover{
+    color: #ffffff;
+    background-image: none;
+    cursor: pointer;
+    transition: 0.5s;
+    scale: .97;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+}
+
+
+

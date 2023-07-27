@@ -10,6 +10,8 @@ import ContactForm  from './components/contact';
 
 
 
+
+
 function App() {
   return (
     <div className="App">
@@ -26,6 +28,7 @@ function App() {
         <Porfolio />
         <ContactForm/>
       </section>
+      
     </div>
   );
 }

@@ -25,7 +25,6 @@ const ContactForm = () => {
         <p>¿Tienes un problema que resolver? <br></br>
             Cuéntame tus ideas para desarrollar el sitio web de tus sueños.
         </p>
-        <a href='m'>cristtiiank@gmail.com</a>
     </div>
 
     <div className='form'> 
@@ -62,7 +61,7 @@ const ContactForm = () => {
           required
         />
       </div>
-      <button type="submit">Enviar</button>
+      <button className='submit' type="submit">Enviar</button>
     </form>
     </div>
     </div>
