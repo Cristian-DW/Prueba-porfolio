@@ -9,7 +9,7 @@ import Red3 from "../media/bxl-github.svg"
 function Nav() {
 
   return (
-    <div className="navbar">
+    <div className="navegacion">
       <div className="navbar-logo">
         <a href="/"><img src={Logo} alt="logo" /></a>
       </div>

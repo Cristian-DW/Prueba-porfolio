@@ -3,10 +3,10 @@ import Nav from "./components/Nav";
 import Hero from "./components/hero";
 import About from "./components/about";
 import Education from './components/education';
-import SvgSlider from './components/skills';
+import ImageSlider from './components/skills';
 import Porfolio from './components/porfolio';
 import ContactForm  from './components/contact';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -22,7 +22,7 @@ function App() {
       <section id="main" className="section">
         <About />
         <div className='slider'>
-          <SvgSlider />
+          <ImageSlider />
         </div>
         <Education />
         <Porfolio />

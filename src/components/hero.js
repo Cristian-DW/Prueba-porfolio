@@ -8,7 +8,7 @@ import Animation from "./animation"
 
 function Hero() {
   return (
-    <div className="container">
+    <div className="header">
       <div className="hero">
         <h1 className="name">Desarrollador Frontend</h1>
         <h2 className="title">

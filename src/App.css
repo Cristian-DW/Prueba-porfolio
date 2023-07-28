@@ -18,9 +18,6 @@
     box-sizing: border-box
 }
 /* Barra de navegación */
-a {
-    text-decoration: none;
-}
 
 
 /* funcionalidad */
@@ -41,7 +38,7 @@ a {
     background-color: #060918;
     color: #fff;
 }
-.navbar{
+.navegacion{
     width: 100%;
     height: 6rem;
     display: flex;
@@ -76,7 +73,7 @@ a {
 
 /* hero o encabezado */
 
-.container{
+.header{
     width: 100%;
     height: 104rem;
     margin: 0 auto;
@@ -133,6 +130,7 @@ a {
     font-size: var(--letraParrafo);
     background-color: #ffffff;
     color: var(--fondo2);
+    
 }    
 .button:hover{
     color: #ffffff;
@@ -359,7 +357,7 @@ a {
     } 
     .container{
         grid-template-columns: 100% 0%;
-        padding: 0rem 25rem  ;
+        padding: 0rem ;
         
     }
     .img img{
@@ -773,4 +771,10 @@ a {
         background-color: #000000;
     }
     
+}
+* a{
+    text-decoration: none;
+}
+.custom-text{
+    font-size: 5rem;
 }

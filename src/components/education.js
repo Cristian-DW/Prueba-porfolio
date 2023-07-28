@@ -2,13 +2,15 @@ import React from "react";
 import ImgSena from "../media/sena.png"
 import ImgMicrosoft from "../media/microsoft.png"
 import ImgGoogle from "../media/google.png"
-
-
-
-
+import Modals from "./modals"
 
 function Education() {
+  const [modalShow, setModalShow] = React.useState(false);
+
+
+
   return (
+    
     <div id="education" className="education">
       <div className="profile">
         <h3>Educación</h3>
@@ -30,8 +32,8 @@ function Education() {
             <p>Bogotá DC</p>
           </article>
           <article className="card">
-          <img className="img-education" src={ImgMicrosoft} alt="curso"/>
-            
+          <img className="img-education" src={ImgMicrosoft} alt="curso" onClick={() => setModalShow(true)}/>
+      <Modals show={modalShow} onHide={() => setModalShow(false)}/>
           </article>
           <article className="card">
           <img className="img-education" src={ImgGoogle} alt="curso"/>
