@@ -4,6 +4,58 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function Modals(props) {
+
+  const {boton , onClose}=props;
+
+  let contenidoCuerpo, contenidoPie;
+
+
+  if(boton === 'icono1'){
+    contenidoCuerpo=(
+      <div>
+      <h4>certificación de Google Activate</h4>
+      <p className='custom-text'> Loremjdhajk jasdhkasghd hsagdhasgd asgdhags hjsgadhj gasdhgh hgasdhjg </p>
+      </div>
+    );
+
+      contenidoPie= (
+        <div>
+          <button onClick={onClose}>Cerrar</button>
+        </div>
+      )
+
+  }else if (boton === 'icono2') {
+    contenidoCuerpo = (
+      <div>
+        <h4>Contenido para Icono 2</h4>
+        <p className='custom-text'>
+          Fusce in dui at dui iaculis tempus. Nullam ut dolor nec
+          quam dictum rhoncus ut eget odio.
+        </p>
+      </div>
+    );
+
+    contenidoPie = (
+      <Button onClick={onClose}>Cerrar Icono 2</Button>
+    );
+  } else {
+    contenidoCuerpo = (
+      <div>
+        <h4>Contenido Predeterminado</h4>
+        <p className='custom-text'>
+          Este es el contenido predeterminado cuando no se selecciona ningún ícono o botón.
+        </p>
+      </div>
+    );
+
+    contenidoPie = (
+      <Button onClick={onClose}>Cerrar Predeterminado</Button>
+    );
+  }
+
+  
+
+
   return (
     <Modal
       {...props}
@@ -13,19 +65,14 @@ function Modals(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Educacion
+          Educación
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Microsoft jaslkdjlkasd</h4>
-        <p className='custom-text'> 
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        {contenidoCuerpo}
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        {contenidoPie}
       </Modal.Footer>
     </Modal>
   );

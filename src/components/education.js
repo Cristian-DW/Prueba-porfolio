@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from 'react';
 import ImgSena from "../media/sena.png"
 import ImgMicrosoft from "../media/microsoft.png"
 import ImgGoogle from "../media/google.png"
 import Modals from "./modals"
 
 function Education() {
-  const [modalShow, setModalShow] = React.useState(false);
+  const [mostrarModal, setMostrarModal] = useState(false);
+  const [iconoSeleccionado, setIconoSeleccionado] = useState('');
+
+  const manejarCierreModal = () => {
+    setMostrarModal(false);
+  };
+
+  const manejarClicIcono = (icono) => {
+    setIconoSeleccionado(icono);
+    setMostrarModal(true);
+  };
 
 
 
@@ -24,24 +34,20 @@ function Education() {
         </p>
       </div>
       <div className="college">
-          <article className="card">
-            <img className="img-education" src={ImgSena} alt="curso"/>
-            <h3>Analisis y Desarrollo de Software </h3>
-            <p>Servicio Nacional de Apredizaje</p>
-            <p>2022 - 2024</p>
-            <p>Bogotá DC</p>
+
+          <article className="custom"  onClick={() => manejarClicIcono('icono1')}    >
+          <img className="img-education" src={ImgMicrosoft} alt="curso"/>
+          <p>Certificación de microsoft en fundamentos del desarrollo de software.</p>
+          <Modals show={mostrarModal} onHide={manejarCierreModal} boton={iconoSeleccionado}onClose={manejarCierreModal}/>
+
           </article>
-          <article className="card">
-          <img className="img-education" src={ImgMicrosoft} alt="curso" onClick={() => setModalShow(true)}/>
-      <Modals show={modalShow} onHide={() => setModalShow(false)}/>
+          <article className="custom">
+          <img className="img-education" src={ImgGoogle} alt="curso" onClick={() => manejarClicIcono('icono2')}/>
+          <Modals show={mostrarModal} onHide={manejarCierreModal} boton={iconoSeleccionado}onClose={manejarCierreModal}/>
           </article>
-          <article className="card">
-          <img className="img-education" src={ImgGoogle} alt="curso"/>
-            
-          </article>
-          <article className="card">
-          <img className="img-education" src={ImgGoogle} alt="curso"/>
-            
+          <article className="custom">
+          <img className="img-education" src={ImgGoogle} alt="curso" onClick={() => manejarClicIcono('icono3')}/>
+          <Modals show={mostrarModal} onHide={manejarCierreModal} boton={iconoSeleccionado}onClose={manejarCierreModal}/>
           </article>
       </div>
     </div>
