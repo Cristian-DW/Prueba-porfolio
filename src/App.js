@@ -6,7 +6,7 @@ import Education from './components/education';
 import ImageSlider from './components/skills';
 import Porfolio from './components/porfolio';
 import ContactForm  from './components/contact';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

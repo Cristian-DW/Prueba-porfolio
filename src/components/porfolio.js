@@ -4,7 +4,7 @@ import React from 'react';
 function Porfolio() {
     return (
       <div id="porfolio" className=" porfolio">
-        <div className="creations profile">
+        <div className="creations">
           <h3>Porfolio</h3>
           <p>
             Explora mis creaciones

@@ -11,10 +11,7 @@ function Hero() {
     <div className="header">
       <div className="hero">
         <h1 className="name">Desarrollador Frontend</h1>
-        <h2 className="title">
-          {" "}
-          <Title />
-        </h2>
+        <h2 className="aptitudes"><Title /></h2>
         <p className="description">
           Me apasiona crear experiencias que sean atractivas, accesibles y
           centradas en el usuario.

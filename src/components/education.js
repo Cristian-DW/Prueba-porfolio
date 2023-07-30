@@ -33,22 +33,29 @@ function Education() {
           metodologías ágiles para el desarrollo de software.
         </p>
       </div>
+      <div></div>
       <div className="college">
 
           <article className="custom"  onClick={() => manejarClicIcono('icono1')}    >
           <img className="img-education" src={ImgMicrosoft} alt="curso"/>
-          <p>Certificación de microsoft en fundamentos del desarrollo de software.</p>
+          <p>Certificación de microsoft en fundamentos del desarrollo de software</p>
           <Modals show={mostrarModal} onHide={manejarCierreModal} boton={iconoSeleccionado}onClose={manejarCierreModal}/>
 
           </article>
-          <article className="custom">
-          <img className="img-education" src={ImgGoogle} alt="curso" onClick={() => manejarClicIcono('icono2')}/>
+          <article className="custom" onClick={() => manejarClicIcono('icono2')}>
+          <img className="img-education" src={ImgGoogle} alt="curso"/>
+          <p>Certificación de Google en fundamentos de marketing digital</p>
           <Modals show={mostrarModal} onHide={manejarCierreModal} boton={iconoSeleccionado}onClose={manejarCierreModal}/>
+
           </article>
-          <article className="custom">
-          <img className="img-education" src={ImgGoogle} alt="curso" onClick={() => manejarClicIcono('icono3')}/>
+
+          <article className="custom"  >
+          <img className="img-education" src={ImgSena} alt="curso"  onClick={() => manejarClicIcono('icono3')}/>
+          <p>Tecnologo del SENA en analisis y desarrollo de software </p>
           <Modals show={mostrarModal} onHide={manejarCierreModal} boton={iconoSeleccionado}onClose={manejarCierreModal}/>
+          
           </article>
+
       </div>
     </div>
   );
